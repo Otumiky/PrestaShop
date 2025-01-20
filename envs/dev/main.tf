@@ -24,8 +24,8 @@ module "rds" {
   engine_version      = "8.0"
   instance_class      = "db.t3.micro"
   db_name             = "prestashop_db"
-  username            = "admin"
-  password            = "securepassword"
+  username            = "********"
+  password            = "********"
   security_group_id   = module.vpc.rds_sg
   subnet_group_name   = "db-subnet-group"
   private_subnet_ids  = module.vpc.private_subnets
